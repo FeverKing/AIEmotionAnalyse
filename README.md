@@ -32,7 +32,7 @@
 
 #### 有敌意的
 
-![neg](https://api.feverking.cn/nlpapi/neg.jpg)
+![neg](https://api.feverking.cn/nlpapi/neg.JPG)
 
 ------
 
