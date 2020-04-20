@@ -33,6 +33,8 @@
 #### 有敌意的
 
 ![neg](https://api.feverking.cn/nlpapi/neg.JPG)
+你也可以体验一下检验效果,因为不必要的加载,此种方式会比插件慢很多:
+[https://nlpapi.feverking.cn](https://nlpapi.feverking.cn)
 
 ------
 
