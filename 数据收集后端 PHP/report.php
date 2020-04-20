@@ -1,5 +1,6 @@
 
 <!--
+使用时请删除
 AI情感分析插件
     Copyright (C) 2020  FeverKing
 
@@ -43,8 +44,9 @@ function insert($content,$tag){
 	$con = mysqli_connect("localhost",$user,$passwd,$dbname);
   	$table = $content;
   	$ip=$_SERVER["REMOTE_ADDR"];
-  	$sql="SELECT * FROM `".$tag."` WHERE 'content' = '".$content."'";
+  	$sql="SELECT * FROM `".$tag."` WHERE content = '".$content."'";
   	if(mysqli_num_rows(mysqli_query($con,$sql))==1){
+		
     }
   	else{
      	$insert = "INSERT INTO ".$tag." VALUE ('', '".$ip."','".$content."',CURRENT_TIMESTAMP)";
