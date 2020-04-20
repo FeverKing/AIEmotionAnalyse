@@ -15,14 +15,22 @@ AI情感分析插件
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 **/
-
 // ==UserScript==
 // @name         AI情感分析
 // @namespace    http://tampermonkey.net/
 // @version      v1.0
 // @description  使用百度飞浆预训练模型进行AI情感分析,支持数据提交,我们一起创建更强大的AI
 // @author       FeverKing
-// @match        https://*/*
+// @match        *://weibo.com/*
+// @match        *://*.weibo.com/*
+// @match        *://*.weibo.cn/*
+// @match        *://sina.com.cn/*
+// @match        *://*.ifeng.com/*
+// @match        *://tieba.baidu.com/*
+// @match        *://*.bilibili.com/
+// @match        *://*.bilibili.com/*
+// @match        *://*.douban.com/group/*
+// @match        *://douban.com/group/*
 // @grant        none
 // @require      https://libs.baidu.com/jquery/2.1.4/jquery.min.js
 // @downloadURL   https://api.feverking.cn/nlpapi/latest.js
