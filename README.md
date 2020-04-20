@@ -24,7 +24,7 @@
 
 #### 友善的
 
-![pos](C:\Users\ALIENWARE\Desktop\AI情感分析\res\pos.JPG)
+![pos](https://api.feverking.cn/nlpapi/pos.JPG)
 
 
 
@@ -32,7 +32,7 @@
 
 #### 有敌意的
 
-![neg](C:\Users\ALIENWARE\Desktop\AI情感分析\res\neg.JPG)
+![neg](https://api.feverking.cn/nlpapi/neg.jpg)
 
 ------
 
