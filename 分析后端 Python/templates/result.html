@@ -1,0 +1,61 @@
+
+<!--
+AI情感分析插件
+    Copyright (C) 2020  FeverKing
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<style>
+			.main{
+				margin-top:5%
+				
+			}
+		</style>
+    <meta charset="UTF-8">
+    <title>Result</title>
+		
+</head>
+<body>
+<div class="main">
+<center>
+<h1>输入的内容: {{ input_text }}<br></h1>
+<h2 id="att"></h2><br>
+<h3>友好程度: {{ postive }}%<br></h3>
+<h3>不友好程度: {{ negative }}%<br></h3>
+<button onclick="goback()">再来亿遍</button>
+</center>
+</div>
+</body>
+
+<script>
+	poss = {{ postive }}
+	if(poss <= 40){
+		document.getElementById("att").innerHTML="这不是一句友好的话,虽然我是个人工智能,但我很伤心"
+	}
+	else if(poss >= 60){
+		document.getElementById("att").innerHTML="看上去这是一句友善的话,记得保持礼貌哦"
+	}
+	else{
+		document.getElementById("att").innerHTML="哔卟~哔卟~短路啦,无法给出准确结果"
+	}
+	
+	function goback(){
+		location.href="home"
+	}
+	</script>
+</html>
